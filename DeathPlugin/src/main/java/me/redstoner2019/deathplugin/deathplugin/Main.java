@@ -32,8 +32,8 @@ public final class Main extends JavaPlugin implements Listener {
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent event) {
         Player player = event.getEntity();
-        player.sendMessage(ChatColor.DARK_RED + "You died!");
-        player.sendMessage(ChatColor.AQUA + "Your death-coordinates are: " + ChatColor.GOLD +  player.getLocation().getBlockX() + " " + player.getLocation().getBlockY() + " " + player.getLocation().getBlockZ() + " ");
+        // player.sendMessage(ChatColor.DARK_RED + "You died!");
+        // player.sendMessage(ChatColor.AQUA + "Your death-coordinates are: " + ChatColor.GOLD +  player.getLocation().getBlockX() + " " + player.getLocation().getBlockY() + " " + player.getLocation().getBlockZ() + " ");
         Bukkit.broadcastMessage(ChatColor.RED + event.getDeathMessage());
         event.setDeathMessage("");
         positions.put(player, player.getLocation());
