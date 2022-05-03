@@ -21,7 +21,7 @@ public final class Main extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(this, this);
-        getServer().getPluginCommand("back").setExecutor(this);
+        getServer().getPluginCommand("death").setExecutor(this);
     }
 
     @Override
